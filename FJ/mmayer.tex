@@ -1,0 +1,252 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.3, 10 May 2020) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{5F9EA0}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+\colorlet{tagline}{VividPurple}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Filip Jovičić}
+\tagline{Budući magistar sociologije}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+%\photoR{2.5cm}{jovo slika cv.png}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{fjovicic125@gmail.com}
+%   \phone{000-00-0000}
+  \mailaddress{Ulica Pavla Hatza 27, 10000}
+  \location{Zagreb}
+  \phone{+385 98 181 0335}
+
+  
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{0000-0000-0000-0000}
+  %% You can add your own arbtrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Iskustvo}
+\divider
+
+\cvevent{Savjetnik u konzultativnoj prodaji}{Iskon Internet d.d.}{2020. --  }{Zagreb}
+\begin{itemize}
+\item Direktna prodaja
+\item Indirektna prodaja
+
+\end{itemize}
+\divider
+\cvevent{Prodajni predstavnik}{Aton usluge d.o.o.}{2019. -- 2020.}{Zagreb}
+\begin{itemize}
+\item Direktna konzultativna prodaja
+\item Posredno poslovanje između klijenta i banke
+
+\end{itemize}
+
+\divider
+
+\cvevent{Savjetnik \& back office asistent}{Iskon Internet d.d.}{2018. -- 2019.}{Zagreb}
+\begin{itemize}
+\item Direktna prodaja korisnicima
+\item Asistent voditelju odjela
+\item Riješavanje korisničkih primjedbi
+\end{itemize}
+
+
+\divider
+
+\cvevent{Savjetnik u prodaji \& supervizor}{Iskon Internet d.d.}{2014. -- 2018.}{Zagreb}
+
+\begin{itemize}
+\item Prodaja
+\item Konzultantske usluge u prodaji
+\item Asistent voditelju odjela
+\end{itemize}
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+\hspace*{-1em}  %% quick hack to move the wheelchart a bit left
+\wheelchart{1.5cm}{0.5cm}{%
+  10/13em/accent!30/Spavanje \&\\ sanjarenje o novom poslu,
+  25/9em/accent!60/Slušanje glazbe,
+  5/11em/accent!10/Netflix,
+  20/11em/accent!40/Provođenje vremena sa obitelji i prijateljima,
+  5/8em/accent!20/Čišćenje,
+  30/9em/accent/Savjetovanje u prodaji,
+  5/8em/accent!20/Kuhanje
+}
+
+% use ONLY \newpage if you want to force a page break for
+% ONLY the currentc column
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Volontiranje}
+\cvevent{Voditelj fundusa}{SKUD “Ivan Goran Kovačić”}{2016.-- }{Zagreb}
+\begin{itemize}
+\item organizacija i vođenje fundusa narodnih nošnji
+\item vođenje logističkih poslova
+\end{itemize}
+\divider
+\cvevent {Član AIESEC Croatia}{}{2015.--2016.}{Zagreb}
+\begin{itemize}
+\item priprema i edukacija praktikanata za internacionalne volonterske prakse
+\item suradnja pri organizaciji konferencija za članove AIESEC-a 
+\item suradnja pri organizaciji modela poslovnog razvitka udruge
+\end{itemize}
+
+\cvsection{Ponosan na}
+
+\cvachievement{\faTrophy}{Poslovni uspjesi}{Supervizor s 22 godine, Voditelj fundusa narodnih nošnji u FA Ivan Goran Kovačić}
+
+\cvachievement{\faHeartbeat}{Folklor}{Očuvanje nacionalne baštine}
+
+\divider
+
+\cvachievement{\faChartLine}{Putovanja}{Italija, Slovenija, Njemačka, Austrija, Portugal, Španjolska, Francuska, Poljska, Litva, Slovačka, Češka, Mađarska, Rusija, Kina, UAE, Turska, Bugarska, Rumunjska, Srbija, BiH}
+
+%\divider
+
+%\cvachievement{\faFemale}{Prijateljstva i obitelj}{}
+
+%\cvsection{Vrline}
+
+%\cvtag{Upornost}
+%\cvtag{Radišnost}\\
+%\cvtag{Razumijevanje}
+%\cvtag{Optimističnost}
+
+%\divider\smallskip
+
+%\cvtag{Komunikacijske vještine}
+%\cvtag{Prezentacijske vještine}
+%\cvtag{Prodajne vještine}
+
+\cvsection{Jezici}
+
+\cvskill{Hrvatski}{5}
+% \divider
+
+\cvskill{Engleski}{4}
+% \divider
+
+\cvskill{Njemački}{2}
+
+
+\cvsection{Edukacija}
+
+\cvevent{Diplomski studij sociologije}{Filozofski fakultet u Zagrebu, \newline Odsjek za sociologiju}{2018. -- }{}
+
+\divider
+
+\cvevent{Sveučilišni prvostupnik sociologije}{Hrvatski studiji Sveučilišta u Zagrebu, Odsjek za sociologiju}{2014. -- 2018.}{}
+
+\newpage
+
+
+
+\end{paracol}
+
+\end{document}
